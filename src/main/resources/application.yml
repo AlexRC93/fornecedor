@@ -1,0 +1,21 @@
+
+server: 
+  port: 8081
+  
+spring:
+  application: 
+    name: 'fornecedor' 
+  datasource:
+    password: mysql
+    username: root
+    url: jdbc:mysql://localhost:3306/fornecedor
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+eureka: 
+  client: 
+    fetch-registry: true
+    register-with-eureka: true
+serviceUrl: 
+  defaultZone: "http://localhost:8761/eureka"
